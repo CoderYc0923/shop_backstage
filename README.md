@@ -1,29 +1,30 @@
-# backstage
+#前后端分离——电商管理系统
 
-## Project setup
-```
-npm install
-```
+  ##用户登录退出(views/Login)
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+  ##用户增删改查(components/Users)
 
-### Compiles and minifies for production
-```
-npm run build
-```
+  ##用户权限管理(components/Power)
 
-### Run your tests
-```
-npm run test
-```
+    ###用户角色管理
 
-### Lints and fixes files
-```
-npm run lint
-```
+    ###用户权限管理
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+  ##商品管理(components/Goods)
+
+    ###商品增删改查
+
+    ###商品分类增删改查
+
+    ###商品参数增删改查
+
+  ##订单管理(components/Order)
+
+    ###订单地址查询（由于后台服务器原因，不能修改）
+
+    ###物流信息查询
+
+  ##数据统计(components/Report)
+
+    ###折线图  
+
