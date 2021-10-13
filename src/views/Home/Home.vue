@@ -82,7 +82,7 @@ export default {
   created() {
     this.getMenuList();
     //当组件被创建的时候就获取到sessionStorage里的activePath值
-    this.activePathValue = window.sessionStorage.getItem('activePath')
+    this.activePathValue = window.sessionStorage.getItem("activePath");
   },
   methods: {
     //退出登录
@@ -97,7 +97,6 @@ export default {
       const { data: res } = await this.$http.get("menus");
       if (res.meta.status !== 200) return this.$message.error(res.mate.msg);
       this.menuList = res.data;
-      console.log(this.menuList);
     },
     //切换菜单的折叠展开
     toggleCollapse() {
@@ -106,7 +105,7 @@ export default {
     //保存链接的激活状态
     saveNavStatus(activePath) {
       window.sessionStorage.setItem("activePath", activePath);
-      this.activePathValue = activePath
+      this.activePathValue = activePath;
     },
   },
 };
